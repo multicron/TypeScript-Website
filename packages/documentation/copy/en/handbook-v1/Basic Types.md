@@ -334,7 +334,7 @@ With `object` type, APIs like `Object.create` can be better represented. For exa
 
 ```ts twoslash
 // @errors: 2345
-declare function create(o: object | null): void;
+declare function create(o: object | null): object;
 
 // OK
 create({ prop: 0 });
